@@ -8,10 +8,11 @@ const db = async () => {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
-    console.log("DB conectada");
+    console.log("Conexion a la base de datos establecida");
   } catch (error) {
     console.error(error);
+    process.exit(1); // Termina la aplicación en caso de error de conexión
   }
 };
 
-module.exports = db;
+module.exports = { db, connection: mongoose.connection }; // Puedes exportar la conexión si es necesario
