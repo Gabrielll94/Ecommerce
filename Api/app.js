@@ -7,11 +7,13 @@ const PORT = 3000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extendend: true }));
 
-// Rutas y controladores
-app.get("/", (req, res) => {
-  res.send("Hola, Bienvenido");
-});
+// Importar rutas
+const productosRoute = requiere('./routes/productosRoutes');
 
+// Usar ruta
+app.use('/productos', productosRoute);
+
+// Inicio al servidor
 app.listen(PORT, () => {
   console.log(`Servidor iniciado en http//localhost:${PORT}`);
 });
