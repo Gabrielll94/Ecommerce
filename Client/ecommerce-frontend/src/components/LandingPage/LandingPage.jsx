@@ -7,7 +7,7 @@ const LandingPage = () => {
   const navigate = useNavigate();
 
   const handleHomeButtonClick = () => {
-    navigate.push("/");
+    navigate("/home");
   };
 
   return (
