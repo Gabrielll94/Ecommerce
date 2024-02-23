@@ -1,9 +1,11 @@
 import React from "react";
+import NavBar from "../NavBar/NavBar";
+import SearchBar from "../SearchBar/SearchBar";
 
-const Producto = ({ productos }) => {
+const Producto = ({ producto }) => {
   <div className="producto">
-    <h2>{productos.nombre}</h2>
-    <p>Precio: {productos.precio}</p>
+    <h2>{producto.nombre}</h2>
+    <p>Precio: {producto.precio}</p>
   </div>;
 };
 
@@ -14,10 +16,12 @@ const Home = () => {
   ];
   return (
     <div>
+      <NavBar />
       <h1>Bienvenido a nuestra tienda deportiva!</h1>
+      <SearchBar />
       <div id="products">
         {products.map((producto, index) => (
-          <producto key={index} producto={products} />
+          <Producto key={index} producto={producto} />
         ))}
       </div>
     </div>
