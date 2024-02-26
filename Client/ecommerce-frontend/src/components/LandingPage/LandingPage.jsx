@@ -12,6 +12,19 @@ const LandingPage = () => {
 
   return (
     <div className="landing-page">
+      <nav>
+        <ul>
+          <li>
+            <a href="#home">Inicio</a>
+          </li>
+          <li>
+            <a href="#products">Productos</a>
+          </li>
+          <li>
+            <a href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </nav>
       <header>
         <h1>Tu tienda Deportiva!</h1>
         <img src={image} alt="example"></img>
@@ -19,13 +32,16 @@ const LandingPage = () => {
         <button onClick={handleHomeButtonClick}>Home</button>
       </header>
       <section className="featured-products"></section>
-      <section className="newletter">
-        <h2>Subscribete a nuestro boletin</h2>
+      <section className="newsletter">
+        <h2>Subscríbete a nuestro boletín</h2>
         <p>
-          Recibe las ultimas ofertas y novedades directamente desde tu bandeja
+          Recibe las últimas ofertas y novedades directamente desde tu bandeja
           de entrada
         </p>
       </section>
+      <footer>
+        <p>© 2024 Tu tienda Deportiva. Todos los derechos reservados.</p>
+      </footer>
     </div>
   );
 };

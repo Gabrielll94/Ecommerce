@@ -1,0 +1,8 @@
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+  "nombre": "Pelota de fútbol",
+  "precio": 20,
+  "descripcion": "Pelota de fútbol oficial para practicar el deporte favorito de millones de personas en todo el mundo."
+}

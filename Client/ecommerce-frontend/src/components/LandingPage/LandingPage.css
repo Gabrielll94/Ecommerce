@@ -3,6 +3,23 @@
   height: 100vh;
   margin: 0;
   padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
 }
 
 header {
@@ -10,16 +27,17 @@ header {
   margin-bottom: 40%;
 }
 
-h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 1.2 em;
-  color: #777;
-}
-
 .newsletter {
   margin-top: 40px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  color: #777;
+  text-align: center;
+  padding: 10px 0;
 }
