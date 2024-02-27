@@ -1,4 +1,4 @@
-POST http://localhost:3000/api/products
+POST http://atlas-sql-65bac0cc9137e30ecb9386ba-8xakz.a.query.mongodb.net/api/products
 Content-Type: application/json
 
 {
